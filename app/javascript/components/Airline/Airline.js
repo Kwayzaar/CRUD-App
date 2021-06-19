@@ -75,7 +75,7 @@ const Airline = (props) => {
   }
 
   let reviews 
-    if(loaded && airline.included) {
+    if (loaded && airline.included) {
       reviews = airline.included.map( (item, index) => {
       return (
         <Review
@@ -85,6 +85,7 @@ const Airline = (props) => {
       )
     })
   }
+  
   return (
   <Wrapper>
     { 
